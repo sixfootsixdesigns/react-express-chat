@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Messages Component should render loading state 1`] = `
+<div
+  class="Messages"
+>
+  loading...
+</div>
+`;
+
+exports[`Messages Component should render with messages 1`] = `
+<div
+  class="Messages"
+>
+  <div>
+    <strong>
+      bob
+    </strong>
+    : 
+    hi
+  </div>
+  <div>
+    <strong>
+      dave
+    </strong>
+    : 
+    hello
+  </div>
+</div>
+`;
+
+exports[`Messages Component should render without messages 1`] = `
+<div
+  class="Messages"
+>
+  <div>
+    No Messages Yet.
+  </div>
+</div>
+`;

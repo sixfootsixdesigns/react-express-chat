@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Message Component should render 1`] = `
+<div
+  class="AddMessageWrapper"
+>
+  <div
+    class="AddMessage"
+  >
+    <textarea
+      placeholder="Enter your message"
+    />
+    <button>
+      Post
+    </button>
+  </div>
+</div>
+`;

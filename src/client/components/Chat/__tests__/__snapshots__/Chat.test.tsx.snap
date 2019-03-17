@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chat Component should add message if NewMessage is fired 1`] = `
+<div
+  class="Messages"
+>
+  <div>
+    <strong>
+      bob
+    </strong>
+    : 
+    henlo
+  </div>
+</div>
+`;
+
+exports[`Chat Component should add users if UserAdded is fired 1`] = `
+<div
+  class="ActiveUsers"
+>
+  <h2>
+    Users
+  </h2>
+  <ul>
+    <li>
+      bob
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Chat Component should render chat after joining 1`] = `
+<div
+  class="Chat"
+>
+  <div
+    class="MessageWrapper"
+  >
+    <div
+      class="MessageInner"
+    >
+      <div
+        class="Messages"
+      >
+        <div>
+          No Messages Yet.
+        </div>
+      </div>
+      <div
+        class="AddMessageWrapper"
+      >
+        <div
+          class="AddMessage"
+        >
+          <textarea
+            placeholder="Enter your message"
+          />
+          <button>
+            Post
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ActiveUsers"
+  >
+    <h2>
+      Users
+    </h2>
+    <p>
+      No Active Users
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Chat Component should render existing users and messages once joined 1`] = `
+<div
+  class="Chat"
+>
+  <div
+    class="MessageWrapper"
+  >
+    <div
+      class="MessageInner"
+    >
+      <div
+        class="Messages"
+      >
+        <div>
+          <strong>
+            dave
+          </strong>
+          : 
+          hi
+        </div>
+      </div>
+      <div
+        class="AddMessageWrapper"
+      >
+        <div
+          class="AddMessage"
+        >
+          <textarea
+            placeholder="Enter your message"
+          />
+          <button>
+            Post
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ActiveUsers"
+  >
+    <h2>
+      Users
+    </h2>
+    <ul>
+      <li>
+        ** 
+        dave
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Chat Component should render with join screen 1`] = `
+<div
+  class="JoinWrapper"
+>
+  <div
+    class="Join"
+  >
+    <input
+      placeholder="Enter your name"
+      required=""
+      type="text"
+      value=""
+    />
+    <button>
+      Join
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Chat Component should update users if UserLeft is fired 1`] = `
+<div
+  class="ActiveUsers"
+>
+  <h2>
+    Users
+  </h2>
+  <ul>
+    <li>
+      dave
+    </li>
+    <li>
+      tim
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Chat Component should update users if UserLeft is fired 2`] = `
+<div
+  class="ActiveUsers"
+>
+  <h2>
+    Users
+  </h2>
+  <ul>
+    <li>
+      dave
+    </li>
+  </ul>
+</div>
+`;

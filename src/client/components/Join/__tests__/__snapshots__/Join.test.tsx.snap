@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Join Component should render 1`] = `
+<div
+  class="JoinWrapper"
+>
+  <div
+    class="Join"
+  >
+    <input
+      placeholder="Enter your name"
+      required=""
+      type="text"
+      value=""
+    />
+    <button>
+      Join
+    </button>
+  </div>
+</div>
+`;

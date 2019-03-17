@@ -1,0 +1,11 @@
+.DS_STORE
+
+/build/
+node_modules
+.cache
+.env
+error.log
+
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log

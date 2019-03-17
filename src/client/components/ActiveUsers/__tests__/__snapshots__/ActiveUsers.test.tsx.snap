@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Active Users Component should render with users and highlight current user 1`] = `
+<div
+  class="ActiveUsers"
+>
+  <h2>
+    Users
+  </h2>
+  <ul>
+    <li>
+      bob
+    </li>
+    <li>
+      ** 
+      dave
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Active Users Component should render without users 1`] = `
+<div
+  class="ActiveUsers"
+>
+  <h2>
+    Users
+  </h2>
+  <p>
+    No Active Users
+  </p>
+</div>
+`;
+
+exports[`Active Users Component should show loading state 1`] = `
+<div
+  class="ActiveUsers"
+>
+  <h2>
+    Users
+  </h2>
+  loading...
+</div>
+`;

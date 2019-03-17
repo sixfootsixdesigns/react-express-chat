@@ -1,0 +1,68 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "author": "James Olson",
+  "license": "MIT",
+  "description": "Chat App",
+  "main": "index.js",
+  "homepage": ".",
+  "scripts": {
+    "build": "yarn build:client; yarn build:server",
+    "build:client": "react-scripts build",
+    "build:server": "tsc --project tsconfig.server.json",
+    "dev:client": "react-scripts start",
+    "dev:server": "nodemon src/server/server.ts",
+    "format": "prettier --write \"src/**/*.{ts,tsx,scss,js}\"",
+    "format:check": "prettier --list-different \"src/**/*.{ts,tsx,scss,json,js}\"",
+    "start": "node build/server.js",
+    "test": "yarn test:client; yarn test:server",
+    "test:client": "jest --config jest.config.client.js",
+    "test:client:watch": "yarn test:client --watch",
+    "test:server": "jest --config jest.config.server.js",
+    "test:server:watch": "yarn test:server --watch"
+  },
+  "proxy": "http://localhost:4001/",
+  "engines": {
+    "node": "^10.11"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "^2.1.8",
+    "shortid": "^2.2.14",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.1",
+    "@types/jest": "^23.0.0",
+    "@types/node": "^10.12.19",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
+    "@types/shortid": "^0.0.29",
+    "@types/socket.io": "^2.1.2",
+    "@types/socket.io-client": "^1.4.32",
+    "@types/supertest": "^2.0.7",
+    "axios-mock-adapter": "^1.16.0",
+    "jest": "23.6.0",
+    "mock-socket": "7.1.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "react-testing-library": "^5.9.0",
+    "supertest": "^4.0.0",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.3"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
